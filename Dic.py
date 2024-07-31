@@ -87,11 +87,103 @@ print(collection)
 print(type(collection))  # <class 'set'>
 
 
+collection = {}
+
+print(type(collection))  # <class 'dict'>
+
+
+
+#set mutable but the elements of the set are immutable
+
+# set methods (add(), clear(), copy(), difference(), difference_update(), discard(), intersection(),
+# intersection_update(), isdisjoint(), issubset(), issuperset(), pop(), remove(), symmetric_difference(), 
+# symmetric_difference_update(), union(), update())
+# add()	Adds an element to the set
+
+
+
+collection =set()
+collection.add(1)
+collection.add(2)
+collection.add(3)
+collection.add("Ansh")
+collection.add("1, 2, 3")  
+# collection.add([1, 2, 3])  # TypeError:immutable unhashable type: 'list'
+
+print(collection)
+print(type(collection))  # <class 'set'>
+collection.remove(1)
+collection.clear()
+
+
+
+collection = {"python", "java", "c++", "c"}
+print(collection.pop())  # pop() method is used to remove the last element of the set
+print(collection.pop())
+
+# set union  (|) operator is used to perform the union operation
+
+
+set1 = {1, 2, 3, 4, 5}
+set2 = {1, 2, 4, 5}
+print(set1 | set2)  # {1, 2, 3, 4, 5}
+print(set1)
+print(set2)
+
+
+# set intersection (&) operator is used to perform the intersection operation   
+
+set1 = {1, 2, 3, 4, 5}
+set2 = {1, 2, 4, 5}
+
+print(set1. intersection(set2))  # {1, 2, 4, 5}
+
+
+#practice
+
+
+
+dict = {
+     "cat" : " A small animal",
+     "table" : "A piece of furniture",
+     
+     
+}
+
+print(dict)
+
+
+subject = { "python", "java", "c++", "c"
+           "python", "java", "c++", "c"
+           }
+
+print(len(subject))  # {'java', 'c', 'python', 'c++'}
 
 
 
 
+collection = {9, "9.0", 9.0}
 
+print(collection)  # {9}
+
+
+values ={
+    ("float", 1.0),
+    ("int", 1),
+    ("string", "1")
+}
+
+print(values)  # {('int', 1), ('string', '1'), ('float', 1.0)}
+
+
+
+marks ={}
+user = int(input("Enter Number : "))
+sub = input("Enter Subject : ")
+mark = int(input("Enter Number : "))
+sub = input("Enter Subject 2 : ")
+marks[sub] = mark
+print(marks)  # {'python': 65, 'java': 70, 'c++': 60, 'c': 70}
 
 
 
